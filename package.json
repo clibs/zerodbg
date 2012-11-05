@@ -1,0 +1,9 @@
+{
+  "name": "debug",
+  "version": "0.0.1",
+  "repo": "nvartolomei/debug.c",
+  "description": "Useful macros for debugging purposes.",
+  "keywords": ["debug", "macro"],
+  "license": "MIT",
+  "src": ["debug.h", "debug.c"]
+}
