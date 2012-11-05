@@ -1,4 +1,6 @@
-# debug.c
+## debug.c
+
+Useful macros for debugging purposes.
 
 ```c
 /*
