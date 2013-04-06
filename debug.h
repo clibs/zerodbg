@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <string.h>
 #include <stdarg.h>
+#include <stdlib.h>
 #include <time.h>
 
 void debug_set_log(FILE * log_file);
@@ -19,8 +20,10 @@ void debug_fprintf(FILE * log_file, const char * format, ...);
 
 #ifdef NDEBUG
 #define debug(M, ...)
+#define die(M, ...) do { debug_fprintf(stderr, "fatal: " M "\n", ##__VA_ARGS__); exit(128); } while(0)
 #else
 #define debug(M, ...) debug_fprintf(stderr, "DEBUG %s:%d: " M "\n", __FILE__, __LINE__, ##__VA_ARGS__)
+#define die(M, ...) do { debug_fprintf(stderr, "[FATAL] (%s:%d) " M "\n", __FILE__, __LINE__, ##__VA_ARGS__); exit(128); } while(0)
 #endif
 
 #define debug_errno() (errno == 0 ? "None" : strerror(errno))
