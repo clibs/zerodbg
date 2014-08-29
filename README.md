@@ -1,4 +1,4 @@
-## debug.c
+## zerodbg
 
 Useful macros for debugging purposes.
 
@@ -18,7 +18,7 @@ Or you could redirect logging information to a file using `debug_set_log(FILE * 
 
 #### Installation
 
-    $ clib install debug.c
+    $ clib install zerodbg
 
 * [Introducing Clib](https://medium.com/code-adventures/introducing-clib-b32e6e769cb3)
 * [clib](https://github.com/clibs/clib)
