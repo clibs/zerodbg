@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repo": "nvartolomei/debug.c",
   "description": "Useful macros for debugging purposes.",
-  "keywords": ["debug", "macro"],
+  "keywords": ["debug", "macro", "log"],
   "license": "MIT",
   "src": ["debug.h", "debug.c"]
 }
