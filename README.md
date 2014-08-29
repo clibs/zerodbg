@@ -18,8 +18,9 @@ Or you could redirect logging information to a file using `debug_set_log(FILE * 
 
 #### Installation
 
-    $ cpm nvartolomei/debug.c
+    $ clib install debug.c
 
-* [cpm](https://github.com/visionmedia/cpm)
+* [Introducing Clib](https://medium.com/code-adventures/introducing-clib-b32e6e769cb3)
+* [clib](https://github.com/clibs/clib)
 
 For serious logging purposes please use a framework.
