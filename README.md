@@ -20,7 +20,11 @@ Or you could redirect logging information to a file using `debug_set_log(FILE * 
 
     $ clib install zerodbg
 
-* [Introducing Clib](https://medium.com/code-adventures/introducing-clib-b32e6e769cb3)
-* [clib](https://github.com/clibs/clib)
+* [Introducing Clib][1]
+* [clib][2]
 
-For serious logging purposes please use a framework.
+For serious logging purposes please use a framework such as [log4c][3] for example.
+
+[1]: https://medium.com/code-adventures/introducing-clib-b32e6e769cb3
+[2]: https://github.com/clibs/zerodbg
+[3]: http://log4c.sourceforge.net
