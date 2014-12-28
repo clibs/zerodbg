@@ -26,5 +26,5 @@ Or you could redirect logging information to a file using `debug_set_log(FILE * 
 For serious logging purposes please use a framework such as [log4c][3] for example.
 
 [1]: https://medium.com/code-adventures/introducing-clib-b32e6e769cb3
-[2]: https://github.com/clibs/zerodbg
+[2]: https://github.com/clibs/clib
 [3]: http://log4c.sourceforge.net
