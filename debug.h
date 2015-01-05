@@ -17,6 +17,7 @@ void debug_set_log(FILE * log_file);
 FILE * debug_get_log();
 
 void debug_fprintf(FILE * log_file, const char * format, ...);
+void debug_printf(const char * format, ...);
 
 #ifdef NDEBUG
 #define debug(M, ...)
@@ -28,8 +29,8 @@ void debug_fprintf(FILE * log_file, const char * format, ...);
 
 #define debug_errno() (errno == 0 ? "None" : strerror(errno))
 
-#define log_error(M, ...) debug_fprintf(debug_get_log(), "[ERROR] (%s:%d: errno: %s) " M "\n", __FILE__, __LINE__, debug_errno(), ##__VA_ARGS__)
-#define log_warning(M, ...) debug_fprintf(debug_get_log(), "[WARNING] (%s:%d: errno: %s) " M "\n", __FILE__, __LINE__, debug_errno(), ##__VA_ARGS__)
-#define log_info(M, ...) debug_fprintf(debug_get_log(), "[INFO] (%s:%d) " M "\n", __FILE__, __LINE__, ##__VA_ARGS__)
+#define log_error(M, ...) debug_printf("[ERROR] (%s:%d: errno: %s) " M "\n", __FILE__, __LINE__, debug_errno(), ##__VA_ARGS__)
+#define log_warning(M, ...) debug_printf("[WARNING] (%s:%d: errno: %s) " M "\n", __FILE__, __LINE__, debug_errno(), ##__VA_ARGS__)
+#define log_info(M, ...) debug_printf("[INFO] (%s:%d) " M "\n", __FILE__, __LINE__, ##__VA_ARGS__)
 
 #endif
