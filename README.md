@@ -7,7 +7,7 @@ debug("I see what you did there o_O!");
 log_info("standing still");
 ```
 
-Output
+Output:
 
 ```
  * DEBUG example.c:12: I see what you did there o_O!
@@ -15,6 +15,11 @@ Output
 ```
 
 Or you could redirect logging information to a file using `debug_set_log(FILE * log_file);`.
+
+If you `#define NDEBUG` calls to debug will be ignored and will output nothing.
+
+If you want to output errnos, you can use `debug_errno()` to transform error
+number to string, if no error happened the resulted string will be “None”.
 
 #### Installation
 
