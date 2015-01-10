@@ -1,9 +1,9 @@
 {
   "name": "zerodbg",
   "version": "1.0.0",
-  "repo": "nvartolomei/debug.c",
-  "description": "Useful macros for debugging purposes.",
-  "keywords": ["debug", "macro", "log"],
+  "repo": "clibs/zerodbg",
+  "description": "Useful macros for debugging.",
+  "keywords": ["debug", "macro", "log", "logging"],
   "license": "MIT",
   "src": ["debug.h", "debug.c"]
 }
